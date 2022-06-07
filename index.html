@@ -50,7 +50,7 @@
         // =================================================================
         // 		Add your own panorama image with envFiles.push(filepath)
         // =================================================================
-        envFiles.push('S_3_B_Test.png');
+        envFiles.push('S_1_B_Test.png');
         envFiles.push('S_3_B_Test.png');
 
         init();
@@ -79,7 +79,7 @@
             for (let i in envFiles) {
                 let texture = new THREE.TextureLoader().load(envFolder + '/' + envFiles[i]);
                 envTextures.push(texture);
-            }
+            } 
 
             let material = new THREE.MeshBasicMaterial({
                 map: envTextures[0]
